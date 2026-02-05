@@ -40,9 +40,7 @@ void main() {
     int deliveryTime = 0;
     if (deliveryDistance > 100) {
         System.out.println("Доставки нет.");
-        return;
-    }
-    if (deliveryDistance >= 60) {
+    } else if (deliveryDistance >= 60) {
         deliveryTime += 3;
         System.out.println("Доставка займет " + deliveryTime + " суток.");
     } else if (deliveryDistance > 20) {
